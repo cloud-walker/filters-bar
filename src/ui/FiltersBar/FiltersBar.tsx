@@ -3,7 +3,13 @@ export declare namespace FiltersBar {
 }
 export function FiltersBar(props: FiltersBar.Props) {
   return (
-    <div {...props}>
+    <div {...props} className="">
+      <button type="button" commandfor="filter-banana" command="toggle-popover">
+        Banana
+      </button>
+      <div popover="auto" id="filter-banana">
+        <input type="text" name="value" />
+      </div>
       <select
         value=""
         onChange={(e) => {
@@ -17,6 +23,7 @@ export function FiltersBar(props: FiltersBar.Props) {
         <option value="ananas">Ananas</option>
         <option value="apple">Apple</option>
       </select>
+      <button type="button">Clear</button>
     </div>
   );
 }
