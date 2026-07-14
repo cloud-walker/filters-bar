@@ -1,3 +1,5 @@
+import { FiltersBar } from "./ui/FiltersBar";
+
 export function App() {
-  return null;
+  return <FiltersBar>asd</FiltersBar>;
 }
