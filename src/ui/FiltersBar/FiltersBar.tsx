@@ -1,4 +1,4 @@
-import { cn } from "../../helpers/cn";
+import { cn } from "#/helpers/cn";
 
 export declare namespace FiltersBar {
   interface Props extends React.ComponentPropsWithRef<"div"> {}
