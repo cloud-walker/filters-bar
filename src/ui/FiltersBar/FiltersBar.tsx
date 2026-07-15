@@ -1,9 +1,11 @@
+import { cn } from "../../helpers/cn";
+
 export declare namespace FiltersBar {
   interface Props extends React.ComponentPropsWithRef<"div"> {}
 }
-export function FiltersBar(props: FiltersBar.Props) {
+export function FiltersBar({ className, ...props }: FiltersBar.Props) {
   return (
-    <div {...props} className="">
+    <div {...props} className={cn("flex items-center gap-2", className)}>
       <button type="button" commandfor="filter-banana" command="toggle-popover">
         Banana
       </button>
